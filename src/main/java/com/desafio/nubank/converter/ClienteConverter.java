@@ -4,10 +4,12 @@ import com.desafio.nubank.dto.ClienteDTO;
 import com.desafio.nubank.dto.ContatoDTO;
 import com.desafio.nubank.model.Cliente;
 import com.desafio.nubank.model.Contato;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Component
 public class ClienteConverter {
 
     public Cliente toClienteEntity(ClienteDTO clienteDTO) {
