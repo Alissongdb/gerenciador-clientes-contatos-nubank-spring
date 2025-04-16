@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class ClienteConverter {
 
-    public Cliente toEntity(ClienteDTO clienteDTO) {
+    public Cliente toClienteEntity(ClienteDTO clienteDTO) {
         return Cliente.builder()
                 .nome(clienteDTO.nome())
                 .email(clienteDTO.email())
@@ -19,7 +19,7 @@ public class ClienteConverter {
                 .build();
     }
 
-    public ClienteDTO toDto(Cliente cliente) {
+    public ClienteDTO toClienteDto(Cliente cliente) {
         return ClienteDTO.builder()
                 .nome(cliente.getNome())
                 .email(cliente.getEmail())
