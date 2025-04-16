@@ -22,7 +22,7 @@ public class Cliente {
 
     private String email;
 
-    private int cpf;
+    private String cpf;
 
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Contato> contatos;
