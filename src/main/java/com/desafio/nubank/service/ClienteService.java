@@ -46,7 +46,7 @@ public class ClienteService {
     }
 
     //GET /clientes/{id}/contatos - Listagem de contatos de um cliente específico
-    public ClienteDTO listarClientesById(Long id) {
+    public ClienteDTO listarContatosByIdCliente(Long id) {
         Cliente cliente = clienteRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Cliente não encontrado"));
 
